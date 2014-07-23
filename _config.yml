@@ -1,12 +1,16 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Paige Crum
+description: Welcome
+meta_description: "Paige Crum Portfolio Site"
 
 markdown: redcarpet
+extensions: [fenced_code_blocks]
 pygments: true
 logo: false
 paginate: 15
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url: 'paigecrum.github.io'
+author: 'Paige Crum'
+email: 'paigecrum@gmail.com'
+# github: 'paigecrum'
+# twitter: 'paigecrum'

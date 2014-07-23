@@ -90,7 +90,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
     color: #3A4145;
@@ -114,6 +114,7 @@ h4, h5, h6 {
     line-height: 1;
     margin-top: 0;
     font-family: 'Open Sans', sans-serif;
+    color: #000;
 }
 
 h1 {
@@ -121,6 +122,7 @@ h1 {
     line-height: 1.2em;
     letter-spacing: -2px;
     text-indent: -3px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -152,7 +154,7 @@ a {
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #000;
 }
 
 h1 a, h2 a, h3 a,
@@ -413,6 +415,7 @@ margin on the iframe, cause it breaks stuff. */
     width:80%;
     max-width: 700px;
     margin: 4rem auto;
+    padding-top: 40px;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;

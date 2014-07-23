@@ -1,13 +1,8 @@
-/* Rosario. I've added and changed few things. Feel free to change it as you like */
-
-/* Font size of 2.0 is too big, I'll reduce it */
 body {font-size: 1.9rem;}
 
-/* Adding some text shadow*/
 .site-head {text-shadow: 2px 2px #234;}
 .site-head a {color:#eee;}
 
-/* The font is too large in the post view. Revert to small size*/
 .post-header .blog-title {font-size:inherit;}
 
 /* Reduce font size and add line-height*/
@@ -33,3 +28,464 @@ img.profile {
   	border-radius: 50px;
 }
 
+/* NEW THINGS ADDED */
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 0;
+  width: 300px;
+}
+
+/* hr divider */
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 0;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.divider-short {
+  border: 0;
+  border-top: 1px solid #ddd;
+  height: 0;
+  margin: 2em auto;
+  width: 100px;
+}
+
+p {
+	font-size: 1em;
+	font-style: normal;
+	margin-top: none;
+  margin-bottom: 1.5em;
+}
+
+.feature {
+	margin: 0 auto;
+	margin-bottom: 3em;
+	text-align: center;
+	width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0.5em;
+  padding: 0;
+  margin: 0;
+}
+
+ul span {
+	float: right;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+a .underline { text-decoration:underline } 
+
+.pink-text {
+  color: #ff6b8e;
+}
+
+.grey-text {
+  color: #404747;
+}
+
+.big {
+  font-size: 2em;
+}
+
+/* =================================
+  NAVIGATION
+   ============================== */
+
+#header {
+	margin: 0 auto;
+	margin-top: 0px;
+	max-width: 960px;
+	width: 100%;
+  padding: 0.2em;
+}
+
+#home-button {
+  display: inline-block;
+  float: left;
+}
+
+nav {
+  font-size: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: right;
+}
+
+nav a, #home-button a {
+  color: #000;
+  display: inline-block;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  text-decoration: none;
+}
+
+nav a:hover, #home-button a:hover {
+  color: #ffa500;
+}
+
+
+/* =================================
+   CONTAINER
+   ============================== */
+
+.container {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 2em 0;  
+	width: 90%;
+	max-width: 960px;
+  font-family: 'Open Sans';
+}
+
+.container-list {
+	margin: 0 auto;
+	max-width: 620px;
+}
+
+.color-container {
+	background: url(creampixels.png);
+  /*border-bottom: 1px solid #E9E9E9;*/
+  padding: 1em;
+}
+
+.box-container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/* =================================
+   CONTENT
+   ============================== */
+
+#content { 
+	margin: 0 auto;
+	padding-top: 100px; 
+}
+
+/* =================================
+   COLUMNS
+   ============================== */
+
+.row {
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+.column {
+	float: left;
+	margin-left: 5%;
+	text-align: center;
+}
+
+.column:first-child { margin-left: 0; }
+
+.full { width: 80%; }
+
+.half { width: 47.5%; }
+
+.third { width: 30%; }
+
+.fourth { width: 15% }
+
+/* =================================
+   CIRCLE IMAGES
+   ============================== */
+
+.image {
+  height: auto;
+	margin: 0 0 10px 0;
+  max-width: 100%; /* necessary */
+}
+
+.circular, .feature .circular {
+	background-position: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+  max-width: 200px;
+}
+
+/* ===============================
+             SQUARES
+================================== */
+
+.brick-container {
+  background: transparent url(/assets/images/brickwall.jpg) center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blog-section, .about-section, .projects-section {
+  opacity: .85;
+  color: black;
+}
+
+.blog-section a, .about-section a, .projects-section a {
+  color: black;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+.blog-section p, .about-section p, .projects-section p {
+  padding-top: 8px;
+}
+
+.about-section p {
+  padding: 3px;
+}
+
+.blog-section a:hover, .about-section a:hover, .projects-section a:hover {
+  color: #ccc;
+}
+
+/*.blog-section {
+  height: 258.391px;
+}*/
+
+.post-title {
+  text-align: center;
+}
+
+/* ===============================
+          CSS CARD FLIPS
+================================== */
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+  .flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 94.5%;
+  /*width: 258px;*/
+  /*height: 89.58333333%;*/
+  height: 258px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .9;
+}
+
+.front {
+  background-color: #fff;
+  color: black;
+  z-index: 2;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  background-color: #000;
+  color: white;
+}
+
+.front-title {
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: 100;
+  left: 25%;
+  margin-bottom: 0;
+  margin-top: 30%;
+}
+
+.front-info {
+  border-top: 1px solid;
+  margin: 13px 30px;
+  font-family: 'Libre Baskerville';
+  font-size: 0.75em;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.back a {
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ==========================
+     HELLO TITLE PORTION
+============================ */
+
+.greeting-container {
+  background-color: #ffffff;
+  color: #000;
+  margin: 70px 0;
+}
+
+.my-name-caps {
+  font-size: 1.5em;
+  font-weight: 800;
+  padding-bottom: 5px;
+  /*margin-bottom: 30px;*/
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 3.5em;
+}
+
+h2 {
+  border-top: 1px solid;
+  /*margin: 0 10px;*/
+  text-align: center;
+}
+
+.title-caps {
+  top: -23px;
+  padding: 0 30px;
+  position: relative;
+  background-color: white;
+  font-weight: 800;
+}
+
+.greeting-italic {
+  font-family: 'Libre Baskerville';
+  /*font-size: 0.9em;*/
+  font-style: italic;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.my-name-caps, .title-caps {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* =======================
+          FOOTER
+========================= */
+footer {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+
+
+#copyright-blurb {
+  text-align: center;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  margin: 0;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 510px;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  /*background-color: rgb(229, 227, 223);*/
+}
+
+#footer-info-box {
+  background-color: #fff;
+  color: #000;
+  width: 46%;
+  /*width: 668px;*/
+  position: absolute;
+  top: 27%;
+  /*top: 142px;*/
+  left: 27%;
+  /*left: 370px;*/
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 30px 0;
+}
+
+#twitter-logo, #linkedin-logo {
+  width: 64px;
+  height: 64px;
+  padding: 25px 10px;
+}
+
+#github-logo {
+  width: 76px;
+  height: 76px;
+  padding: 25px 10px 20px 10px;
+}
+
+.button span {
+  font-family: 'Montserrat';
+  color: black;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  display: inline-block;
+  padding-left: 32px;
+  padding-right: 32px;
+  letter-spacing: .03em;
+  padding: 6px 30px;
+  width: 31%;
+}
+
+/*---- Special Ampersand -----*/
+.amp {
+  font-family: 'Libre Baskerville', 'Playfair Display', Palatino;
+}
